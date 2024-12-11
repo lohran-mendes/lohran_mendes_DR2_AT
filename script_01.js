@@ -1,0 +1,1 @@
+//Crie um programa simples que mostre um alert pergunta: “Qual é a diferença entre alert e console na construção de programas em JavaScript?” e em seguida mostre um outro alert com a resposta.
