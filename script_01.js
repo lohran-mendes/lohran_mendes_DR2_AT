@@ -1,1 +1,3 @@
 //Crie um programa simples que mostre um alert pergunta: “Qual é a diferença entre alert e console na construção de programas em JavaScript?” e em seguida mostre um outro alert com a resposta.
+alert('Qual é a diferença entre alert e console na construção de programas em JavaScript?')
+alert('O alert geralmente é usado para apresentar alguma informação para o usuário, enquanto o console é usado para passar informações ao próprio desenvolvedor.')
