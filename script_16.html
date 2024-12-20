@@ -1,0 +1,48 @@
+<!--   Calculadora de Diferença entre Datas
+
+ Crie um formulário HTML com dois campos de data (input type="date").
+ Quando o usuário selecionar as duas datas e clicar em um botão "Calcular", crie uma função JavaScript que calcule a diferença em dias entre as duas datas usando o objeto Date.
+ Exiba o resultado (número de dias de diferença) na página HTML.
+ Adicione uma validação que verifique se as datas inseridas são válidas e se a data final é maior que a data inicial. Se não forem, exiba uma mensagem de erro no HTML.
+ Assim que terminar, salve todos os links para os exercícios realizados em PDF nomeando o arquivo conforme a regra “nome_sobrenome_DR2_AT.PDF” e poste como resposta ao AT. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./script_16.js"></script>
+  <title>DR2-AT16</title>
+  <style>
+    label {
+      display: inline-block;
+      margin-bottom: 5px;
+      width: 6rem;
+      margin-right: 5px;
+    }
+
+    input {
+      width: 38ch;
+    }
+
+    button[type="submit"] {
+      width: 5rem;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="" class="form">
+    <label for="date1">Primeira data</label>
+    <input type="date" name="date1" id="date1">
+    <br>
+    <label for="date2">Segunda data</label>
+    <input type="date" name="date2" id="date2">
+    <br>
+    <button type="submit" onclick="calcular(event)">Envio</button>
+    <div id="validacao"></div>
+  </form>
+</body>
+
+</html>
