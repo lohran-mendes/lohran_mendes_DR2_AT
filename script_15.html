@@ -1,0 +1,50 @@
+<!-- Formulário Interativo de Inscrição
+
+ Crie um formulário HTML com campos para nome, idade e e-mail, além de um botão de envio. Utilize as tags input, e button.
+ Quando o formulário for submetido, crie uma função JavaScript que valide os campos:
+ O nome deve ter pelo menos 3 caracteres.
+ A idade deve ser um número positivo.
+ O e-mail deve conter "@".
+ Exiba uma mensagem no HTML informando se os dados estão corretos ou não. -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./script_15.js"></script>
+  <title>DR2-AT15</title>
+  <style>
+    label {
+      display: inline-block;
+      margin-bottom: 5px;
+      width: 3rem;
+      margin-right: 5px;
+    }
+     input {
+      width: 38ch;
+    }
+    input[type="submit"] {
+      	width: 5rem;
+        margin-bottom: 5px;
+      }
+  </style>
+</head>
+
+<body>
+  <form action="" class="form">
+    <label for="name">Nome</label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="number">Idade</label>
+    <input type="number" name="number" id="number">
+    <br>
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email">
+    <br>
+    <input type="submit" value="Enviar" onclick="validar(event)">
+    <div id="validacao"></div>
+  </form>
+</body>
+
+</html>

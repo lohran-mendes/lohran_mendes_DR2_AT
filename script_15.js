@@ -6,3 +6,16 @@
 // A idade deve ser um número positivo.
 // O e-mail deve conter "@".
 // Exiba uma mensagem no HTML informando se os dados estão corretos ou não.
+
+function validar(event) {
+  event.preventDefault()
+  const name = document.querySelector('#name');
+  const number = document.querySelector('#number');
+  const email = document.querySelector('#email');
+  const texto = document.querySelector('#validacao')
+  if(name.value.length >= 3 && number.value > 0 && email.validity.valid) {
+    texto.textContent = 'Os dados estão corretos!'
+  } else {
+    texto.textContent = 'Os dados não estão corretos, tente novamente.'
+ }
+}
